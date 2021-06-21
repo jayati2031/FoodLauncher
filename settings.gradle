@@ -1,0 +1,2 @@
+rootProject.name='FoodLauncher'
+include ':app'

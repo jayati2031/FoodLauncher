@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.favourites.FavouritesFragment"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Favourites"
+        app:titleTextColor="#000"
+        android:background="@color/colorPrimary"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fav_restaurants"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Restaurants"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/chip_s"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fav_food"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Food"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/chip_ns"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_fav_res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_fav_food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="@font/montserrat"
+        android:padding="20dp"
+        android:id="@+id/not_available_food"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="@font/montserrat"
+        android:padding="20dp"
+        android:id="@+id/not_available_rest"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:visibility="gone"/>
+</LinearLayout>

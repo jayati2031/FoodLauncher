@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ui.user.UserFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearlayout1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="@drawable/user_background"
+            android:orientation="vertical"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:paddingVertical="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:fontFamily="@font/montserrat_bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_email"
+            android:textAlignment="center"
+            android:paddingVertical="10dp"
+            android:textColor="#000"
+            android:fontFamily="@font/montserrat"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_phone"
+            android:textAlignment="center"
+            android:paddingVertical="10dp"
+            android:textColor="#000"
+            android:fontFamily="@font/montserrat"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_favrest"
+            android:textAlignment="center"
+            android:paddingVertical="5dp"
+            android:fontFamily="@font/montserrat"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_favfood"
+            android:textAlignment="center"
+            android:paddingVertical="5dp"
+            android:fontFamily="@font/montserrat"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_below="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_margin="25dp"/>
+
+</RelativeLayout>

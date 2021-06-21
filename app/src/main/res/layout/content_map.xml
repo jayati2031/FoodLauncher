@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.skyfishjy.library.RippleBackground
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ripple_bg"
+            app:rb_color="#0099CC"
+            app:rb_radius="32dp"
+            app:rb_rippleAmount="4"
+            app:rb_duration="2000"
+            app:rb_scale="6">
+
+            <ImageButton
+                android:id="@+id/btn_find"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_background"
+                android:textColor="@color/white"
+                android:src="@drawable/ic_search"
+                android:layout_marginBottom="130dp"
+                android:elevation="5dp" />
+
+            <ImageButton
+                android:id="@+id/btn_nearby_find"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_background"
+                android:textColor="@color/white"
+                android:src="@drawable/ic_search"
+                android:layout_marginBottom="130dp"
+                android:elevation="5dp" />
+
+        </com.skyfishjy.library.RippleBackground>
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/autocomplete"
+            android:layout_alignParentTop="true"
+            android:hint="Search Location"
+            android:layout_margin="12dp"
+            android:imeOptions="actionSearch"
+            android:background="@drawable/search_background"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="15dp"
+            android:elevation="5dp"
+            android:maxLines="1" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/content_restaurants" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="rectangle">
+            <!-- Set the border color of your layout here -->
+            <corners android:radius="8dp" />
+            <stroke android:width="1dp" android:color="@color/LightGray" />
+            <solid android:color="@color/LightGray" />
+
+        </shape>
+    </item>
+
+    <item android:bottom="1dp"
+        android:top="0dp"
+        android:left="0dp"
+        android:right="0dp">
+        <shape
+            android:shape="rectangle">
+            <corners android:radius="8dp" />
+            <!-- Set the background color of your layout here -->
+            <stroke android:width="1dp" android:color="@color/white" />
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+
+</layer-list>

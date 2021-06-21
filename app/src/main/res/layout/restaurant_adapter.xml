@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/details"
+    android:elevation="5dp"
+    android:clickable="true"
+    android:id="@+id/rest_details"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/limage"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp">
+
+        <ImageView
+            android:id="@+id/res_image"
+            android:layout_height="140dp"
+            android:layout_width="140dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/res_image"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/limage"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/montserrat"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="13sp"
+            android:fontFamily="@font/montserrat"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/montserrat"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
